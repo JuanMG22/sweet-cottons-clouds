@@ -5,7 +5,7 @@
 | library                                                          | used                      |
 | ---------------------------------------------------------------- | ------------------------- |
 | [Wouter]                                                         | Router lib for React      |
-| [StandardJS]                                                     | Linter                     |
+| [StandardJS]                                                     | Linter                    |
 | [TailwindCSS]                                                    | CSS Framework             |
-| [ChackraUI]                                                       | CSS Framework            |
+| [ChackraUI]                                                      | CSS Framework             |
 | [React Icons]                                                    | React Icons Library       |
