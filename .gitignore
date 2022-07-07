@@ -1,8 +1,8 @@
 # dependencies
 /node_modules
 
-# testing
-/coverage
+# error logs
+*.log
 
 # production
 /build

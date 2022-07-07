@@ -1,0 +1,15 @@
+@import url(../node_modules/tachyons/css/tachyons.min.css);
+
+html,
+body,
+#root {
+  background-color: #131415;
+}
+
+.bg-primary {
+  background-color: #131415;
+}
+
+.primary {
+  color: #131415;
+}
