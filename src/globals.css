@@ -1,0 +1,28 @@
+@import url(../node_modules/tachyons/css/tachyons.min.css);
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffd4eb;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+#root {
+  background-color: #ffd4eb;
+}
+.primary {
+  color: #3e434f;
+}
+.fit {
+  object-fit: cover;
+}
