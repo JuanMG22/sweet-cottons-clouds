@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Navbar from "./components/Navbar";
 import LandingContainer from "./components/LandingContainer";
+import './globals.css'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
