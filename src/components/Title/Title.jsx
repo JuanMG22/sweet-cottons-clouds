@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Title = ({ children }) => {
   return (
@@ -14,7 +14,7 @@ const Title = ({ children }) => {
         }
         .text {
           font-size: 350%;
-          font-family: "Italiana";
+          font-family: 'Italiana';
           font-style: normal;
           font-weight: 600;
           line-height: 118px;

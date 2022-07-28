@@ -1,5 +1,5 @@
-import React from "react";
-import Title from "../Title/Title";
+import React from 'react';
+import Title from '../Title/Title';
 
 const Contact = () => {
   return (
@@ -33,14 +33,14 @@ const Contact = () => {
         input {
           font-size: 150%;
           padding: 1.2rem;
-          font-family: "Roboto";
+          font-family: 'Roboto';
           font-weight: 200;
         }
 
         textarea {
           font-size: 150%;
           padding: 1.2rem;
-          font-family: "Roboto";
+          font-family: 'Roboto';
           font-weight: 200;
           resize: none;
         }
@@ -56,7 +56,7 @@ const Contact = () => {
           border: none;
           padding: 1rem 4rem;
           font-weight: bold;
-          font-family: "Roboto";
+          font-family: 'Roboto';
           font-style: normal;
           font-weight: 700;
           font-size: 30px;

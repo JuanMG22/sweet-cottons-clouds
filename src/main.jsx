@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Gallery from './components/Gallery';
 import Navbar from './components/Navbar';
 import SalesPolicies from './components/SalesPolicies';
-import Contact from "./components/Contact";
+import Contact from './components/Contact';
 import LandingContainer from './components/LandingContainer';
 import './globals.css';
 
