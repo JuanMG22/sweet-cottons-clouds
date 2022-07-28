@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Gallery from './components/Gallery';
 import Navbar from './components/Navbar';
 import SalesPolicies from './components/SalesPolicies';
+import Contact from "./components/Contact";
 import LandingContainer from './components/LandingContainer';
 import './globals.css';
 
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/policies" element={<SalesPolicies />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
