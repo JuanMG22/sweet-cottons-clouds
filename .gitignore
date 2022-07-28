@@ -1,6 +1,9 @@
 # dependencies
 /node_modules
 
+# error logs
+*.log
+
 # production
 /build
 

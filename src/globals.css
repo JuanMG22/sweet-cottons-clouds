@@ -19,8 +19,20 @@ a {
   background-color: #ffd4eb;
 }
 .primary {
-  color: #3e434f;
+  color: #ffd4eb;
+}
+.bg-primary {
+  background-color: #ffd4eb;
+}
+.secondary {
+  color: #ffebf65c;
+}
+.bg-secondary {
+  background-color: #ffebf65c;
 }
 .fit {
   object-fit: cover;
+}
+.bg-divider {
+  background-color: #FFADF7;
 }
