@@ -7,8 +7,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffd4eb;
@@ -21,8 +21,20 @@ a {
   background-color: #ffd4eb;
 }
 .primary {
-  color: #3e434f;
+  color: #ffd4eb;
+}
+.bg-primary {
+  background-color: #ffd4eb;
+}
+.secondary {
+  color: #ffebf65c;
+}
+.bg-secondary {
+  background-color: #ffebf65c;
 }
 .fit {
   object-fit: cover;
+}
+.bg-divider {
+  background-color: #FFADF7;
 }
