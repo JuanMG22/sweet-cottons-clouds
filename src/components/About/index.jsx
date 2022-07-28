@@ -1,5 +1,5 @@
-import React from "react";
-import Title from "../Title/Title";
+import React from 'react';
+import Title from '../Title/Title';
 import sandra from '../../img/sandra.png';
 
 const About = () => {
