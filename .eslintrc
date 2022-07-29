@@ -12,10 +12,11 @@
     }
   },
   "rules": {
-    "quotes": ["error", "single"],
     "semi": ["error", "always"],
+    "quotes": ["error", "single"],
     "strict": ["error", "global"],
     "indent": ["error", 2],
+    "react/jsx-key": "off",
     "react/prop-types": "off",
     "no-unused-vars": "error",
     "no-console": ["error", { "allow": ["warn", "error"] }]

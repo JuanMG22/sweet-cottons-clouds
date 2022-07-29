@@ -17,7 +17,7 @@ const Gallery = () => {
   return (
     <>
       <Title>Gallery</Title>
-      <h2 className="titulo flex justify-center">Reborn Babies</h2>
+      <h2 className="f1 italiana flex justify-center">Reborn Babies</h2>
 
       <div className="flex flex-column justify-center items-center w-100">
         {rebornImages.map(img => (
@@ -27,18 +27,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-
       <FsLightbox toggler={toggler} type="image" sources={[img1, img2, img3, img4]} />
-
-      <style jsx>{`
-        .titulo {
-          font-size: 350%;
-          font-family: 'Italiana';
-          font-style: normal;
-          font-weight: 600;
-          line-height: 118px;
-        }
-      `}</style>
     </>
   );
 };
