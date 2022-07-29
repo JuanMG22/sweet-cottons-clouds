@@ -8,7 +8,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'italiana';
   background-color: #ffd4eb;
 }
 a {
@@ -35,4 +34,10 @@ a {
 }
 .bg-divider {
   background-color: #ffadf7;
+}
+.roboto {
+  font-family: Roboto;
+}
+.italiana {
+  font-family: 'italiana';
 }

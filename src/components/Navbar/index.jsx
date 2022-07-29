@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
+import DropdownMenu from '../DropdownMenu';
 
 const Navbar = () => {
   const categories = [
@@ -11,18 +12,30 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className="flex justify-between items-center h-nav bg-secondary shadow-2">
-        <div className="flex items-center w-logo mh2">
-          <Link className="center" to="/">
-            <img src={logo} alt="Sweet Cotton Clouds" />
-          </Link>
+      <nav className="roboto flex center z-max items-center ph4 h-nav bg-secondary shadow-5">
+        <div className="w-100 center mw9 dn flex-l justify-between overflow-hidden">
+          <div className="w-logo">
+            <Link className="center" to="/">
+              <img src={logo} alt="Sweet Cotton Clouds" />
+            </Link>
+          </div>
+          <div className="flex items-center">
+            {categories.map(category => (
+              <div className="mh2 f-categories">
+                <Link to={category.url}>{category.name}</Link>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex items-center">
-          {categories.map(category => (
-            <div className="mh2 f-categories">
-              <Link to={category.url}>{category.name}</Link>
-            </div>
-          ))}
+        <div className="w-100 center mw9 flex justify-between dn-l">
+          <div className="flex items-center">
+            <Link to="/">
+              <img className="w-isologo" src={logo} alt="logo" />
+            </Link>
+          </div>
+          <div className="flex items-center">
+            <DropdownMenu />
+          </div>
         </div>
       </nav>
       <style jsx>{`
@@ -31,6 +44,9 @@ const Navbar = () => {
         }
         .w-logo {
           width: 210px;
+        }
+        .w-isologo {
+          width: 180px;
         }
         .pr-search {
           padding-right: 70px;
