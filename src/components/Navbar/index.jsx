@@ -5,10 +5,10 @@ import DropdownMenu from '../DropdownMenu';
 
 const Navbar = () => {
   const categories = [
-    { name: 'About the artist', url: '/about' },
-    { name: 'Gallery', url: '/gallery' },
-    { name: 'Contact me', url: '/contact' },
-    { name: 'Sales Policies', url: '/policies' }
+    { id: 1, name: 'About the artist', url: '/about' },
+    { id: 2, name: 'Gallery', url: '/gallery' },
+    { id: 3, name: 'Contact me', url: '/contact' },
+    { id: 4, name: 'Sales Policies', url: '/policies' }
   ];
   return (
     <>
@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             {categories.map(category => (
-              <div className="mh2 f-categories">
+              <div className="mh2 f-categories" key={category.id}>
                 <Link to={category.url}>{category.name}</Link>
               </div>
             ))}
