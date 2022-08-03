@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import { Menu, MenuItem } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const DropdownMenu = () => (
   <>
     <Menu
       menuButton={({ open }) => (
         <button className="f6 grow br2 ph3 pv2 bg-white b--purple bw1">
-          {open ? 'Close' : 'Categories'}
+          {open ? <FaTimes /> : <FaBars />}
         </button>
       )}
       viewScroll="initial"
