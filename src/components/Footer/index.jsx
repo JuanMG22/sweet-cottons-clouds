@@ -12,15 +12,30 @@ const Footer = () => (
           <img src={logo} alt="Sweet Cotton Clouds" />
         </Link>
         <div className="f3 flex mt3">
-          <Link className="center" to="/">
+          <a
+            className="center"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/sweetcottonclouds_rn/"
+          >
             <FaInstagram />
-          </Link>
-          <Link className="center" to="/">
+          </a>
+          <a
+            className="center"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/sweetcottonclouds/"
+          >
             <FaFacebook />
-          </Link>
-          <Link className="center" to="/">
+          </a>
+          <a
+            className="center"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://vm.tiktok.com/ZMN58Su5C/?k=1"
+          >
             <FaTiktok />
-          </Link>
+          </a>
         </div>
       </div>
       <div className="flex flex-column normal pv3 mt3">
