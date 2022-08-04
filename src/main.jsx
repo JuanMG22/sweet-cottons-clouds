@@ -7,7 +7,7 @@ import Gallery from './components/Gallery';
 import Navbar from './components/Navbar';
 import SalesPolicies from './components/SalesPolicies';
 import Contact from './components/Contact';
-import LandingContainer from './components/LandingContainer';
+import Home from './components/Home';
 import './globals.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<LandingContainer />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/policies" element={<SalesPolicies />} />

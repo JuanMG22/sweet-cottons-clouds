@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png';
 import DropdownMenu from '../DropdownMenu';
 
 export const categories = [
@@ -10,31 +9,34 @@ export const categories = [
   { id: 4, name: 'Sales Policies', url: '/policies' }
 ];
 
-const Navbar = () => {
+export default function Navbar() {
   return (
     <>
-      <nav className="roboto flex center z-max items-center ph4 h-nav bg-secondary shadow-5">
+      <nav className="roboto flex center z-max items-center ph4-l ph3 h-nav bg-secondary shadow-5">
         <div className="w-100 center mw9 dn flex-l justify-between overflow-hidden">
           <div className="w-logo">
             <Link className="center" to="/">
-              <img src={logo} alt="Sweet Cotton Clouds" />
+              <img src="/assets/logo.png" alt="Sweet Cotton Clouds" />
             </Link>
           </div>
           <div className="flex items-center">
             {categories.map(category => (
               <div className="mh2 f-categories" key={category.id}>
-                <Link className="nav-links" to={category.url}>
+                <Link className="roboto" to={category.url}>
                   {category.name}
                 </Link>
               </div>
             ))}
           </div>
         </div>
-        <div className="w-100 center mw9 flex justify-between dn-l">
+        <div className="w-100 center mw9 flex justify-around dn-l">
           <div className="flex items-center">
             <Link to="/">
-              <img className="w-isologo" src={logo} alt="logo" />
+              <img className="w3" src="/assets/isologo.png" alt="logo" />
             </Link>
+          </div>
+          <div className="flex items-center tc italiana">
+            <h1 className="f4 ph3">Sweet Cotton Clouds</h1>
           </div>
           <div className="flex items-center">
             <DropdownMenu />
@@ -46,10 +48,7 @@ const Navbar = () => {
           height: 6rem;
         }
         .w-logo {
-          width: 210px;
-        }
-        .w-isologo {
-          width: 180px;
+          width: 200px;
         }
         .pr-search {
           padding-right: 70px;
@@ -57,12 +56,7 @@ const Navbar = () => {
         .f-categories {
           font-size: 18px;
         }
-        .nav-links {
-          font-family: 'Roboto', sans-serif;
-        }
       `}</style>
     </>
   );
-};
-
-export default Navbar;
+}
