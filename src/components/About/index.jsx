@@ -5,44 +5,63 @@ import sandra from '../../assets/sandra.png';
 const About = () => (
   <>
     <Title>About the artist</Title>
-    <div className="flex justify-center">
+    <div className="flex flex-column flex-row-l justify-center">
       <img src={sandra} />
       <div className="flex-column">
         <h2 className="subtitle">Hello, my name is Sandra Molfino</h2>
-        <p>
+        <p className="flex justify-center w-100">
           I am the reborn artist behind Sweet Cotton Clouds Reborn Nursery. I started in this
           amazing world more than 10 years ago as a collector.
         </p>
       </div>
     </div>
-    <div className="flex justify-center">
+    <div className="flex flex-column items-center">
       <p className="para">
         By that time, I was experiencing infertility problems and saw one of these beautiful babies
         on sale; I couldn’t believe how realistic they were, and decided to buy one. After several
-        years I had my first baby, and I continued collecting until my second baby was born. I felt
-        that collecting was not giving me enough happiness, so invoking my painting skills and a
-        great passion for this art, I decided to start my career as a reborn artist. This is how my
-        dream of Sweet Cotton Clouds Reborn Nursery began. Since then, all my love and passion has
-        been poured into each of my creations, each of my babies goes to their new homes with a
-        piece of my heart. Here you can find some pics of my work but if you would like to see more
-        you are welcome to visit my page.
+        years I had my first baby, and I continued collecting until my second baby was born.
+      </p>
+      <p className="para">
+        I felt that collecting was not giving me enough happiness, so invoking my painting skills
+        and a great passion for this art, I decided to start my career as a reborn artist. This is
+        how my dream of Sweet Cotton Clouds Reborn Nursery began. Since then, all my love and
+        passion has been poured into each of my creations, each of my babies goes to their new homes
+        with a piece of my heart. Here you can find some pics of my work but if you would like to
+        see more you are welcome to visit my page.
       </p>
     </div>
 
     <style jsx>{`
       .subtitle {
         font-size: 350%;
-        max-width: 10ch;
+        max-width: 100%;
+        text-align: center;
       }
       p {
-        font-size: 250%;
-        max-width: 15ch;
+        font-size: 200%;
+        max-width: 100%;
+        text-align: center;
       }
       .para {
-        max-width: 75%;
-        font-size: 250%;
+        font-size: 200%;
         font-weight: 400;
         line-height: 50px;
+      }
+      @media screen and (min-width: 768px) {
+        .subtitle {
+          font-size: 350%;
+          max-width: 10ch;
+        }
+        p {
+          font-size: 250%;
+          max-width: 15ch;
+        }
+        .para {
+          max-width: 78%;
+          font-size: 250%;
+          font-weight: 400;
+          line-height: 50px;
+        }
       }
     `}</style>
   </>

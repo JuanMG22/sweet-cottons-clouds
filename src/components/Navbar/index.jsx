@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import DropdownMenu from '../DropdownMenu';
 
+export const categories = [
+  { id: 1, name: 'About the artist', url: '/about' },
+  { id: 2, name: 'Gallery', url: '/gallery' },
+  { id: 3, name: 'Contact me', url: '/contact' },
+  { id: 4, name: 'Sales Policies', url: '/policies' }
+];
+
 const Navbar = () => {
-  const categories = [
-    { id: 1, name: 'About the artist', url: '/about' },
-    { id: 2, name: 'Gallery', url: '/gallery' },
-    { id: 3, name: 'Contact me', url: '/contact' },
-    { id: 4, name: 'Sales Policies', url: '/policies' }
-  ];
   return (
     <>
       <nav className="roboto flex center z-max items-center ph4 h-nav bg-secondary shadow-5">
@@ -22,7 +23,9 @@ const Navbar = () => {
           <div className="flex items-center">
             {categories.map(category => (
               <div className="mh2 f-categories" key={category.id}>
-                <Link to={category.url}>{category.name}</Link>
+                <Link className="nav-links" to={category.url}>
+                  {category.name}
+                </Link>
               </div>
             ))}
           </div>
@@ -53,6 +56,9 @@ const Navbar = () => {
         }
         .f-categories {
           font-size: 18px;
+        }
+        .nav-links {
+          font-family: 'Roboto', sans-serif;
         }
       `}</style>
     </>
