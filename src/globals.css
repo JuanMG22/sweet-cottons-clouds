@@ -32,12 +32,15 @@ a {
 .fit {
   object-fit: cover;
 }
+.contain {
+  object-fit: contain;
+}
 .bg-divider {
   background-color: #ffadf7;
 }
 .roboto {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 .italiana {
-  font-family: 'italiana';
+  font-family: 'Italiana', serif;
 }

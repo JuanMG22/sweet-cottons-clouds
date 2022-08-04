@@ -1,41 +1,23 @@
 import React from 'react';
 import Title from '../Title/index';
-import img1 from '../../assets/1.png';
-import img2 from '../../assets/2.png';
-import img3 from '../../assets/3.png';
-import img4 from '../../assets/4.png';
-import img5 from '../../assets/5.png';
-import img6 from '../../assets/6.png';
-import img7 from '../../assets/7.png';
-import img8 from '../../assets/8.png';
-import img9 from '../../assets/9.png';
-import img10 from '../../assets/10.png';
-import img11 from '../../assets/11.png';
-import img12 from '../../assets/12.png';
-import img13 from '../../assets/13.png';
-import img14 from '../../assets/14.png';
-import img15 from '../../assets/15.png';
-import img16 from '../../assets/16.png';
-import img17 from '../../assets/17.png';
-import img18 from '../../assets/18.png';
-
-import '../../../node_modules/photoswipe/dist/photoswipe.css';
 import { Gallery as MyGallery, Item } from 'react-photoswipe-gallery';
-
-const rebornImages = [
-  { id: 0, images: { src1: img1, src2: img2 } },
-  { id: 1, images: { src1: img3, src2: img4 } },
-  { id: 2, images: { src1: img5, src2: img6 } },
-  { id: 3, images: { src1: img7, src2: img8 } },
-  { id: 4, images: { src1: img9, src2: img10 } },
-  { id: 5, images: { src1: img11, src2: img12 } },
-  { id: 6, images: { src1: img13, src2: img14 } },
-  { id: 7, images: { src1: img15, src2: img16 } }
-];
-
-const fantasyImages = [{ id: 0, images: { src1: img17, src2: img18 } }];
+import '../../../node_modules/photoswipe/dist/photoswipe.css';
 
 const Gallery = () => {
+  const rebornImages = [
+    { id: 0, images: { src1: '/assets/images/1.png', src2: '/assets/images/2.png' } },
+    { id: 1, images: { src1: '/assets/images/3.png', src2: '/assets/images/4.png' } },
+    { id: 2, images: { src1: '/assets/images/5.png', src2: '/assets/images/6.png' } },
+    { id: 3, images: { src1: '/assets/images/7.png', src2: '/assets/images/8.png' } },
+    { id: 4, images: { src1: '/assets/images/9.png', src2: '/assets/images/10.png' } },
+    { id: 5, images: { src1: '/assets/images/11.png', src2: '/assets/images/12.png' } },
+    { id: 6, images: { src1: '/assets/images/13.png', src2: '/assets/images/14.png' } },
+    { id: 7, images: { src1: '/assets/images/15.png', src2: '/assets/images/16.png' } }
+  ];
+  const fantasyImages = [
+    { id: 0, images: { src1: '/assets/images/17.png', src2: '/assets/images/18.png' } }
+  ];
+
   return (
     <>
       <Title>Gallery</Title>

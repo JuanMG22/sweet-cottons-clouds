@@ -9,8 +9,8 @@ const DropdownMenu = () => (
   <>
     <Menu
       menuButton={({ open }) => (
-        <button className="f6 grow br2 ph3 pv2 b--purple bw1">
-          {open ? <FaTimes className="icon-menu" /> : <FaBars className="icon-menu" />}
+        <button className="flex grow br2 ph3 pv2">
+          {open ? <FaTimes className="f5" /> : <FaBars className="f5" />}
         </button>
       )}
       viewScroll="initial"
@@ -19,32 +19,22 @@ const DropdownMenu = () => (
       transition
       arrow
     >
-      <Link to="/" className="links-drop">
+      <Link to="/">
         <MenuItem>Home</MenuItem>
       </Link>
-      <Link to="/about" className="links-drop">
+      <Link to="/about">
         <MenuItem>About the artist</MenuItem>
       </Link>
-      <Link to="/gallery" className="links-drop">
+      <Link to="/gallery">
         <MenuItem>Gallery</MenuItem>
       </Link>
-      <Link to="/contact" className="links-drop">
+      <Link to="/contact">
         <MenuItem>Contact</MenuItem>
       </Link>
-      <Link to="/policies" className="links-drop">
+      <Link to="/policies">
         <MenuItem>Sales Policies</MenuItem>
       </Link>
     </Menu>
-
-    <style jsx>{`
-      .links-drop {
-        padding: 0.3rem 0;
-        font-family: 'Roboto', sans-serif;
-      }
-      .icon-menu {
-        font-size: 125%;
-      }
-    `}</style>
   </>
 );
 
