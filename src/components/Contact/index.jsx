@@ -4,8 +4,7 @@ import Title from '../Title';
 const Contact = () => (
   <>
     <Title>Contact Me</Title>
-
-    <div className="roboto f4 flex flex-column items-center justify-center mt4">
+    <div className="center mw9 roboto f4 flex flex-column items-center justify-center mt4">
       <input
         type="text"
         name="name"
@@ -27,7 +26,6 @@ const Contact = () => (
       />
       <button className="br-pill mv4 bg-white grow ph5 pv2 b tc f4">Submit</button>
     </div>
-
     <style jsx>{`
       .rn {
         resize: none;

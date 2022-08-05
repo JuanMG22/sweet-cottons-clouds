@@ -22,8 +22,7 @@ const Gallery = () => {
     <>
       <Title>Gallery</Title>
       <h2 className="f1 italiana flex justify-center">Reborn Babies</h2>
-
-      <div className="flex flex-column justify-center items-center w-100">
+      <div className="center mw9 flex flex-column justify-center items-center w-100">
         <MyGallery>
           {rebornImages.map(img => (
             <div className="fl w-50 w-30-l flex justify-center" key={img.id}>
@@ -53,7 +52,6 @@ const Gallery = () => {
             </div>
           ))}
         </MyGallery>
-
         <h2 className="f1 italiana flex justify-center tc">Reborn Fantasy Babies</h2>
         <MyGallery>
           {fantasyImages.map(img => (
