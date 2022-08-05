@@ -16,14 +16,11 @@ const Home = () => {
         <img className="w-100 h-carrousel fit shadow-5" src="/assets/carrousel.png" />
       </div>
       <Title>Reborn Babies</Title>
-      {images.map(image => (
-        <div
-          key={image.id}
-          className="flex flex-row-ns items-center flex-column mv4 w-100 ph3 justify-around overflow-hidden"
-        >
-          <img className="grow w-80 w-30-ns" src={image.src} alt={image.alt} />
-        </div>
-      ))}
+      <div className="flex flex-row-ns items-center flex-column mv4 w-100 ph3 justify-around overflow-hidden">
+        {images.map(image => (
+          <img key={image.id} src={image.src} alt={image.alt} className="grow w-80 w-30-ns" />
+        ))}
+      </div>
       <p className="f2 tc roboto">Welcome to my nursery!</p>
       <p className="ma0 f2 w-80 w-90-ns center tj roboto">
         Here you will find your dream baby for your collection or a special therapy baby for you or
