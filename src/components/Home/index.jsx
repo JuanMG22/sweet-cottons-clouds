@@ -21,8 +21,8 @@ const Home = () => {
           <img key={image.id} src={image.src} alt={image.alt} className="grow w-80 w-30-ns" />
         ))}
       </div>
-      <p className="f2 tc roboto">Welcome to my nursery!</p>
-      <p className="ma0 f2 w-80 w-90-ns center tj roboto">
+      <p className="ph2 f2 tc roboto">Welcome to my nursery!</p>
+      <p className="ma0 f3 w-80 w-90-ns center tj roboto">
         Here you will find your dream baby for your collection or a special therapy baby for you or
         someone you love. I dedicate lots of hours creating each baby, they are made with lots of
         love and each one goes home with a piece of my heart.
