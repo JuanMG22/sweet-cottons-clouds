@@ -45,7 +45,7 @@ export default function Navbar() {
       </nav>
       <style jsx>{`
         .h-nav {
-          height: 6rem;
+          height: 7rem;
         }
         .w-logo {
           width: 200px;
