@@ -9,7 +9,7 @@ const Footer = () => {
   };
   return (
     <>
-      <footer className="flex justify-center mt5 items-center w-100 h5 bg-white justify-around-l">
+      <footer className="flex justify-center mt5 items-center w-100 h5 bg-secondary shadow-4 justify-around-l">
         <div className="w5 mt3">
           <img src="/assets/logo.png" alt="Sweet Cotton Clouds" onClick={scrollTop} />
           <div className="f3 flex mt3">

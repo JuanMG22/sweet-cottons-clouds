@@ -18,17 +18,15 @@ const About = () => (
           several years I had my first baby, and I continued collecting until my second baby was
           born.
         </p>
+        <p className="roboto center w-90 tj f3">
+          I felt that collecting was not giving me enough happiness, so invoking my painting skills
+          and a great passion for this art, I decided to start my career as a reborn artist. This is
+          how my dream of Sweet Cotton Clouds Reborn Nursery began. Since then, all my love and
+          passion has been poured into each of my creations, each of my babies goes to their new
+          homes with a piece of my heart. Here you can find some pics of my work but if you would
+          like to see more you are welcome to visit my page.
+        </p>
       </div>
-    </div>
-    <div className="flex flex-column items-center">
-      <p className="roboto center w-90 tj f3">
-        I felt that collecting was not giving me enough happiness, so invoking my painting skills
-        and a great passion for this art, I decided to start my career as a reborn artist. This is
-        how my dream of Sweet Cotton Clouds Reborn Nursery began. Since then, all my love and
-        passion has been poured into each of my creations, each of my babies goes to their new homes
-        with a piece of my heart. Here you can find some pics of my work but if you would like to
-        see more you are welcome to visit my page.
-      </p>
     </div>
   </>
 );
